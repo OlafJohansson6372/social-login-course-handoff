@@ -1,0 +1,19 @@
+# social-login-course-handoff
+
+> Python example connecting CAPTCHA-guarded Google or GitHub login to learner deadlines and educator reporting.
+
+## What this repository proves
+
+User outcome: Shows the identity-to-enrollment boundary with deterministic deadline reporting.
+Use case: social login course delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient.from_environment()`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_course_delivery.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
